@@ -1,8 +1,21 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {StyleSheet, View} from 'react-native';
+
+import ScSignUp from './ScSignUp';
 
 const Home = () => {
-  return <Text>Home</Text>;
+  return (
+    <View style={styles.container}>
+      <ScSignUp />
+    </View>
+  );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    height: '100%',
+    width: '100%',
+  },
+});
 
 export default Home;
