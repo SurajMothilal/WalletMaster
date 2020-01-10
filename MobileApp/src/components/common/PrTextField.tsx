@@ -1,15 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {StyleSheet, TextInput, TextInputProps} from 'react-native';
 
 type Props = {
-  placeholder?: string;
+  value: string;
+  name: string;
+  onChange?: (fieldName: string, text: string) => void;
 } & TextInputProps;
 
-const PrTextField: React.FC<Props> = ({placeholder, style}) => {
-  const [value, onChangeText] = useState(placeholder || '');
+const PrTextField: React.FC<Props> = ({onChange, value, name, style}) => {
   return (
     <TextInput
-      onChangeText={onChangeText}
+      onChangeText={text => onChange(name, text)}
       value={value}
       style={[style || {}, styles.fieldStyle]}
     />

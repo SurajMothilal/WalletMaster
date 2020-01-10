@@ -1,12 +1,12 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 
-import ScSignUp from './ScSignUp';
+import FmSignIn from './FmSignIn';
 
 const Home = () => {
   return (
     <View style={styles.container}>
-      <ScSignUp />
+      <FmSignIn />
     </View>
   );
 };
