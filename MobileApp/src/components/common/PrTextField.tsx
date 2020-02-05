@@ -1,11 +1,12 @@
 import React from 'react';
-import {StyleSheet, TextInput, TextInputProps} from 'react-native';
+import {StyleSheet, TextInput, StyleProp, TextStyle} from 'react-native';
 
 type Props = {
   value: string;
   name: string;
   onChange?: (fieldName: string, text: string) => void;
-} & TextInputProps;
+  style?: StyleProp<TextStyle>;
+};
 
 const PrTextField: React.FC<Props> = ({onChange, value, name, style}) => {
   return (

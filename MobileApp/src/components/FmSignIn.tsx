@@ -12,6 +12,10 @@ const FmSignIn = () => {
         value: '',
         validators: ['yolo'],
       },
+      password: {
+        value: '',
+        validators: ['yolo2'],
+      },
     },
     values => console.log(values),
   );
@@ -21,6 +25,11 @@ const FmSignIn = () => {
         value={values.username.value}
         onChange={onChange}
         name="username"
+      />
+      <PrTextField
+        value={values.username.value}
+        onChange={onChange}
+        name="password"
       />
       <PrButton title="Submit" onPress={handleSubmit} />
     </>
