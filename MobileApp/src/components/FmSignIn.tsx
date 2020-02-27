@@ -10,11 +10,11 @@ const FmSignIn = () => {
     {
       username: {
         value: '',
-        validators: ['yolo'],
+        validators: [() => null, () => null],
       },
       password: {
         value: '',
-        validators: ['yolo2'],
+        validators: [() => null, () => null],
       },
     },
     values => console.log(values),
