@@ -3,6 +3,7 @@ import React from 'react';
 import PrTextField from './common/PrTextField';
 import PrButton from './common/PrButton';
 import useForm from '../hooks/useForm';
+import ApiService from '../services/ApiService';
 
 const FmSignIn = () => {
   const {onChange, handleSubmit, values} = useForm(
@@ -17,7 +18,7 @@ const FmSignIn = () => {
         validators: [() => null, () => null],
       },
     },
-    values => console.log(values),
+    values => console.log(ApiService('getUser', values)),
   );
   return (
     <>
