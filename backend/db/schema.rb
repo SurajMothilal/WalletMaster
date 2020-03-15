@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_03_15_203910) do
 
-# Could not dump table "user" because of following StandardError
+# Could not dump table "users" because of following StandardError
 #   Unknown type 'uuid' for column 'id'
 
 end
