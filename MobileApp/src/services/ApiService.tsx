@@ -3,7 +3,7 @@ import axios from 'axios';
 const endpoints = {
   getUser: {
     type: 'get',
-    url: '/users',
+    url: '/users/12',
   },
 };
 
