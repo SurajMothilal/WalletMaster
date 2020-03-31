@@ -1,7 +1,6 @@
-const config = {
-  displayName: 'MobileApp',
-  testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-  preset: 'react-native',
+module.exports = {
+  roots: ['<rootDir>/src'],
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
 };
-
-module.exports = config;

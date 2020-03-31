@@ -29,9 +29,8 @@
     "babel-jest": "^25.2.4",
     "eslint": "^6.7.2",
     "jest": "^25.2.4",
-    "metro-react-native-babel-preset": "^0.57.0"
-  },
-  "jest": {
-    "preset": "react-native"
+    "metro-react-native-babel-preset": "^0.57.0",
+    "ts-jest": "^25.3.0",
+    "typescript": "^3.8.3"
   }
 }
